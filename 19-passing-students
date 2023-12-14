@@ -1,0 +1,16 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    Array[Boolean] passedArray = {passedExam, passedAssignments, passedProject};
+    Integer passedCount = 0;
+    
+    for(Boolean passed :passedArray) {
+        if(passed) {
+            passedCount++;
+        }
+    }
+
+    if(passedCount > 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
