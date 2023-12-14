@@ -8,7 +8,7 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
         }
     }
 
-    if(passedCount > 2) {
+    if(passedCount >= 2) {
         return true;
     } else {
         return false;
