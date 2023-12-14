@@ -1,15 +1,15 @@
 public String aOrAn(String word) {
     if(word.startsWith('a')) {
-        return 'an';
+        return 'an ' + word;
     } else if(word.startsWith('e')) {
-        return 'an';
+        return 'an ' + word;
     } else if(word.startsWith('i')) {
-        return 'an';
+        return 'an ' + word;
     } else if(word.startsWith('o')) {
-        return 'an';
+        return 'an ' + word;
     } else if(word.startsWith('u')) {
-        return 'an';
+        return 'an ' + word;
     } else {
-        return 'a';
+        return 'a ' + word;
     }
 }
