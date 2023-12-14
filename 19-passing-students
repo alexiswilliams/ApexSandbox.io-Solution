@@ -1,5 +1,5 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-    Array[Boolean] passedArray = new Array[Boolean]{passedExam, passedAssignments, passedProject};
+    Boolean[] passedArray = new Boolean[]{passedExam, passedAssignments, passedProject};
     Integer passedCount = 0;
     
     for(Boolean passed :passedArray) {
