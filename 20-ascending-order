@@ -1,8 +1,8 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
-    if(b > a) {
+    if(b >= a) {
         return true;
     }
-    if(c > b) { 
+    if(c >= b) { 
         return true;
     }
 
