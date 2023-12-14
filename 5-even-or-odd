@@ -1,0 +1,3 @@
+public String evenOrOdd(Integer num) {
+    Integer mod = Math.mod(num);
+}
