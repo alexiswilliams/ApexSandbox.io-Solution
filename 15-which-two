@@ -2,16 +2,4 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     Integer resultA = b + c;
     Integer resultB = a + c;
     Integer resultC = a + b;
-    
-    if(resultA == a) {
-        return 'a';
-    }
-    if(resultB == b) {
-        return 'b';
-    }
-    if(resultC == c) { 
-        return 'c'
-    }
-
-    return '';
 }
