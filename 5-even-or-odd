@@ -1,8 +1,8 @@
 public String evenOrOdd(Integer num) {
     Integer mod = Math.mod(num, 2);
-    if(mod == 1) { 
+    if(mod == 2) { 
         return 'odd';
     } else {
-        return 'true';
+        return 'even';
     }
 }
