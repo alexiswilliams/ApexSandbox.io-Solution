@@ -17,6 +17,8 @@ public Integer rockPaperScissors(String player1, String player2) {
             return 1;
         } else if(player1 == SCISSORS && player2 == ROCK) {
             return 2;
+        } else {
+            return 0;
         }
     }
 }
