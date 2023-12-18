@@ -4,19 +4,19 @@ public Integer rockPaperScissors(String player1, String player2) {
     private static final ROCK = 'rock';
     private static final SCISSORS = 'scissors';
 
-    if(player1 === player2) return 0;
+    if(player1 == player2) return 0;
 
-    if(player1 === PAPER && player2 === ROCK) {
+    if(player1 == PAPER && player2 == ROCK) {
         return 1;
-    } else if(player1 === PAPER && player2 === SCISSORS) {
+    } else if(player1 == PAPER && player2 == SCISSORS) {
         return 2;
-    } else if(player1 === ROCK && player2 === PAPER) {
+    } else if(player1 == ROCK && player2 == PAPER) {
         return 2;
-    } else if(player1 === ROCK && player2 === SCISSORS) {
+    } else if(player1 == ROCK && player2 == SCISSORS) {
         return 1;
-    } else if(player1 === SCISSORS && player2 === PAPER) {
+    } else if(player1 == SCISSORS && player2 == PAPER) {
         return 1;
-    } else if(player1 === SCISSORS && player2 === ROCK) {
+    } else if(player1 == SCISSORS && player2 == ROCK) {
         return 2;
     }
 }
