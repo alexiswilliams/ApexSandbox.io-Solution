@@ -3,5 +3,5 @@ public Integer rockPaperScissors(String player1, String player2) {
     String ROCK = 'rock';
     String SCISSORS = 'scissors';
 
-    
+    return 0;
 }
