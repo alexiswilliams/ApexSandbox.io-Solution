@@ -1,5 +1,4 @@
 public Integer rockPaperScissors(String player1, String player2) {
-    //code here
     String PAPER = 'paper';
     String ROCK = 'rock';
     String SCISSORS = 'scissors';
@@ -7,7 +6,7 @@ public Integer rockPaperScissors(String player1, String player2) {
     if(player1 == player2) {
         return 0;
     }
-    
+
     if(player1 == PAPER && player2 == ROCK) {
         return 1;
     } else if(player1 == PAPER && player2 == SCISSORS) {
