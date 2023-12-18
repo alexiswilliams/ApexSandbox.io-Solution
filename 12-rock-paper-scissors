@@ -1,8 +1,8 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
-    private static final PAPER = 'paper';
-    private static final ROCK = 'rock';
-    private static final SCISSORS = 'scissors';
+    private static final String PAPER = 'paper';
+    private static final String ROCK = 'rock';
+    private static final String SCISSORS = 'scissors';
 
     if(player1 == player2) return 0;
 
