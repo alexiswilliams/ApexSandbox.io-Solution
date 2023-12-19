@@ -6,7 +6,7 @@ public Boolean isPrime(Integer num) {
 
         Integer mod = Math.mod(num, i);
         if(mod == 0) {
-            counter++;
+            counter = counter + 1;
         }
     }
 
