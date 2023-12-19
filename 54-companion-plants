@@ -1,0 +1,13 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    String lettuce = 'lettuce';
+    String cucumbers = 'cucumbers';
+    String onions = 'onions';
+    String carrots = 'carrots';
+    String tomatoes = 'tomatoes';
+
+    if(plant1 == plant2) {
+        return false;
+    } else {
+        return true;
+    }
+}
