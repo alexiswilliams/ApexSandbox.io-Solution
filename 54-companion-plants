@@ -22,6 +22,8 @@ public Boolean companionPlants(String plant1, String plant2) {
             return true;
         } else if(plant1 == carrots && plant2 == onions) {
             return true;
+        } else if(plant1 == tomatoes && plant1 == onions) {
+            return true;
         }
         return false;
     }
