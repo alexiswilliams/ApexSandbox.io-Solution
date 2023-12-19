@@ -4,7 +4,13 @@ public Boolean isLeapYear(Integer year) {
     Integer fourHundred = Math.mod(year, 400);
 
     if(four == 0) {
-        return true;
+        if(oneHundred == 0 && fourHundred != 0) {
+            return false;
+        } else if (oneHundred == 0 && fourHundred == 0) {
+            return true;
+        } else {
+            return true;
+        }
     } else {
         return false;
     }
