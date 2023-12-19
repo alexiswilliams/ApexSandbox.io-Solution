@@ -1,10 +1,15 @@
 public String nameFromEmail(String email) {
-    String[] emailArray = email.split('@');
-    String[] fullName = emailArray[0].split('.');
-    String firstName, lastName;
+    String email = 'john.doe@apexsandbox.io';
+String[] emailArray = email.split('@');
+String fullName = emailArray[0];
+String firstName, lastName;
+Integer indexOfDot = fullName.indexOf('.');
 
-    firstName = fullName[0].toLowerCase().capitalize();
-    lastName = fullName[1].toLowerCase().capitalize();
+firstName = fullName.substring(0, indexOfDot-1);
+lastName = fullName.substring(indexOfDot+1, fullName.length());
+
+firstName = firstName.toLowerCase().capitalize();
+lastName = lastName.toLowerCase().capitalize();
 
     return firstName + ' ' + lastName;
 }
