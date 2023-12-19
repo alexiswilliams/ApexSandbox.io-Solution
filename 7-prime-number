@@ -10,7 +10,7 @@ public Boolean isPrime(Integer num) {
         }
     }
 
-    if(counter > 1) { 
+    if(counter <= 1) { 
         return true;
     } else {
         return false;
