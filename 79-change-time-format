@@ -1,5 +1,5 @@
 public String changeTimeFormat(String strTime) {
-    Integer[] timeOfDay = strTime.split(':');
+    String[] timeOfDay = strTime.split(':');
     Integer hour = Integer.valueOf(timeOfDay[0]);
     Integer minute = Integer.valueOf(timeOfDay[1]);
     String am = ' AM';
