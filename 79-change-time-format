@@ -16,6 +16,7 @@ public String changeTimeFormat(String strTime) {
         }
         if(hour < 10) {
             formatHour = '0' + String.valueOf(hour);
+            return formatHour + ':' + timeOfDay[1] + am;
         } else {
             formatHour = String.valueOf(hour);
         }
