@@ -11,6 +11,8 @@ public String changeTimeFormat(String strTime) {
         return '12' + ':' + timeOfDay[1] + am;
     } else if(hour == 11) {
         return timeOfDay[0] + ':' + timeOfDay[1] + am;
+    } else if(hour == 12) {
+        return timeOfDay[0] + ':' + timeOfDay[1] + pm;
     } else {
         if(hour > 12) {
             hour = hour - 12;
