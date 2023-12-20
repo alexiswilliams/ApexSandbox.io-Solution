@@ -20,7 +20,6 @@ public String changeTimeFormat(String strTime) {
         } else {
             formatHour = String.valueOf(hour);
         }
-    }
     } else {
         if(hour > 12) {
             hour = hour - 12;
