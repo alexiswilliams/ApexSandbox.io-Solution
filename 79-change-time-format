@@ -6,7 +6,7 @@ public String changeTimeFormat(String strTime) {
     String pm = ' PM';
 
     if(hour < 12) {
-        return timeOfDay.toString() + ':' + timeOfDay.toString() + am;
+        return hour + ':' + minute + am;
     } else {
         return hour + ':' + minute + pm;
     }
