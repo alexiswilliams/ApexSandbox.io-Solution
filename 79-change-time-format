@@ -13,7 +13,7 @@ public String changeTimeFormat(String strTime) {
         return timeOfDay[0] + ':' + timeOfDay[1] + am;
     } else if(hour == 12) {
         return timeOfDay[0] + ':' + timeOfDay[1] + pm;
-    } else if(hour >= 10) {
+    } else if(hour <= 10) {
         if(hour < 10) {
             formatHour = '0' + String.valueOf(hour);
             return formatHour + ':' + timeOfDay[1] + am;
