@@ -26,6 +26,7 @@ public String changeTimeFormat(String strTime) {
             return formatHour + ':' + timeOfDay[1] + am;
         } else {
             formatHour = String.valueOf(hour);
+            return formatHour + ':' + timeOfDay[1] + am;
         }
         
         return formatHour + ':' + timeOfDay[1] + pm;
