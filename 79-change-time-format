@@ -1,7 +1,7 @@
 public String changeTimeFormat(String strTime) {
-    Integer[] time = strTime.split(':');
-    Integer hour = time[0];
-    Integer minute = time[0];
+    Integer[] timeOfDay = strTime.split(':');
+    Integer hour = timeOfDay[0];
+    Integer minute = timeOfDay[0];
     String am = ' AM';
     String pm = ' PM';
 
