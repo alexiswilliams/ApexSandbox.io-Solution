@@ -25,6 +25,10 @@ public String changeTimeFormat(String strTime) {
         } else {
             formatHour = String.valueOf(hour);
         }
+
+        if(isPM) {
+            return formatHour + ':' + timeOfDay[1] + pm;    
+        }
         return formatHour + ':' + timeOfDay[1] + am;
     }
 
