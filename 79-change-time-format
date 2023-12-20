@@ -18,6 +18,8 @@ public String changeTimeFormat(String strTime) {
             formatHour = String.valueOf(hour);
         }
         return formatHour + ':' + timeOfDay[1] + pm;
+    } else {
+        return formatHour + ':' + timeOfDay[1] + pm;
     }
 
 }
