@@ -4,11 +4,16 @@ public String changeTimeFormat(String strTime) {
     Integer minute = Integer.valueOf(timeOfDay[1]);
     String am = ' AM';
     String pm = ' PM';
+    String formatHour;
 
     if(hour < 12) {
         return timeOfDay[0] + ':' + timeOfDay[1] + am;
     } else {
-        return hour + ':' + minute + pm;
+        hour = hour - 12;
+        if(hour > 10) {
+            formatHour = '0' + String.valueOf(hour);
+        }
+        return formatHour + ':' + timeOfDay[1] + pm;
     }
 
 }
