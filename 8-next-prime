@@ -1,0 +1,21 @@
+public Integer nextPrime(Integer num) {
+    if(i < 2) {
+        return 2;
+    } else {
+        Integer temp = num + 1;
+        while(!isPrime(temp)) {
+            temp =+ 1;
+        }
+
+        return temp;
+    }
+}
+
+public Boolean isPrime(Integer num) {
+    for(Integer i = 2; i < n; i++) {
+        Integer mod = Math.mod(num, i);
+        if(mod == 0) {
+            return false;
+        }
+    }
+}
