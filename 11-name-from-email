@@ -3,7 +3,7 @@ public String nameFromEmail(String email) {
     String fullName = emailArray[0];
     String firstName, lastName;
     Integer indexOfDot = fullName.indexOf('.');
-    String[] name = fullName.split('\.');
+    String[] name = fullName.split('.');
     firstName = fullName.substring(0, indexOfDot);
     lastName = fullName.substring(indexOfDot+1, fullName.length());
 
