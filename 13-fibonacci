@@ -8,5 +8,5 @@ public Integer fibonacci(Integer n) {
         last = temp; 
     }
 
-    return last;
+    return current;
 }
