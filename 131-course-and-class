@@ -9,4 +9,6 @@ public void createCourseAndClass(String name, String description) {
     classToInsert.Name = name;
     classToInsert.apxio__Description__c = description.left(255);
     classToInsert.apxio__Course__c = course.Id;
+
+    insert classToInsert;
 }
