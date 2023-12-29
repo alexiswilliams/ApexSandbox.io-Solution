@@ -3,9 +3,6 @@ public List<Account> checkAccounts(List<Account> accounts)
     if(accounts == null) {
         throw new AccountException('accounts should not be null');
     }
-    if(accounts.size() == 0) {
-        throw new AccountException('accounts should not be null');
-    } 
 
     for(Account acct :accounts) {
         if(String.isBlank(acct.BillingCity)) {
