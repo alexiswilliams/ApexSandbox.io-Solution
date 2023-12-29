@@ -1,0 +1,17 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    if(accounts.size() == 0 || accounts == null) {
+        throw new AccountException('accounts should not be null');
+    } 
+
+    for(Account acct :accounts) {
+        if(String.isBlank(acct.BillingCity)) {
+            throw new AccountException('Invalid BillingCity');
+        }
+    }
+
+    return accounts;
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
