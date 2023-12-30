@@ -5,12 +5,13 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     if(accounts == null && contacts == null) {
         return objects;
     } else {
-        for(Contact con :contacts) {
-            objects.add(con);
-        }       
+              
         for(Account acc :accounts) {
             objects.add(acc);
         }
+        for(Contact con :contacts) {
+            objects.add(con);
+        } 
 
         return objects;
     }
