@@ -1,4 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
+    if(accounts == null) return accounts;
+    
     AccountComparator accountComparator = new AccountComparator();
     accounts.sort();
     return accounts;
