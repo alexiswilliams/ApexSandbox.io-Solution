@@ -1,5 +1,7 @@
 public List<Account> getAccounts(List<Account> accounts) {
-    // code here
+    AccountComparator accountComparator = new AccountComparator();
+    accounts.sort();
+    return accounts;
 }
 public class AccountComparator implements Comparator<Account> {
     public Integer compare(Account o1, Account o2) {
