@@ -29,10 +29,10 @@ public class AccountComparator implements Comparator<Account> {
             returnValue = 1;
         } else if (o1.AnnualRevenue < o2.AnnualRevenue) {
             // Set return value to a negative value.
-            returnValue = -1;
+            returnValue = 1;
         } else if (o1.AnnualRevenue > o2.AnnualRevenue) {
             // Set return value to a positive value.
-            returnValue = 1;
+            returnValue = -1;
         }
         return returnValue;
     }
