@@ -34,6 +34,6 @@ public class AccountComparator implements Comparator<Account> {
             // Set return value to a positive value.
             returnValue = 1;
         }
-        return returnValue;
+        return o1.AnnualRevenue.compareTo(o2.AnnualRevenue);
     }
 }
