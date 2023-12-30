@@ -6,5 +6,5 @@ public Map<String,String> getContextUserInformation(){
     values.put('Type', UserInfo.getUserType());
     values.put('UserName', UserInfo.getUserName());
 
-    return userInfo;
+    return values;
 }
