@@ -27,12 +27,12 @@ public class AccountComparator implements Comparator<Account> {
         } else if (o2.AnnualRevenue == null){
             // nulls-first implementation
             returnValue = 1;
-        } else if (o1.AnnualRevenue < o2.AnnualRevenue) {
-            // Set return value to a negative value.
-            returnValue = 1;
         } else if (o1.AnnualRevenue > o2.AnnualRevenue) {
-            // Set return value to a positive value.
+            // Set return value to a negative value.
             returnValue = -1;
+        } else if (o1.AnnualRevenue < o2.AnnualRevenue) {
+            // Set return value to a positive value.
+            returnValue = 1;
         }
         return returnValue;
     }
