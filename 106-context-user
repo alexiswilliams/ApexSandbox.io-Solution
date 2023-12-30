@@ -1,4 +1,6 @@
 public Map<String,String> getContextUserInformation(){
+    Map<String, String> values = new Map<String, String>();
+    
     values.put('EmailId', UserInfo.getUserEmail());
     values.put('ProfileId', UserInfo.getProfileId());
     values.put('Type', UserInfo.getUserType());
