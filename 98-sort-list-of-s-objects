@@ -6,7 +6,7 @@ public List<Account> getAccounts(List<Account> accounts) {
     return accounts;
 }
 public class AccountComparator implements Comparator<Account> {
-    public Integer compare(Account a1, Account a2) {
+    public Integer compareTo(Account a1, Account a2) {
         // The return value of 0 indicates that both elements are equal.
         Integer returnValue = 0;
         
